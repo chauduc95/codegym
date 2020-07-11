@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function KiemTraSoNguyenTo(so){
+if(so<2)
+{return false;}
+if(so==2)
+{return true;}
+if(so%2==0)
+{return false;}
+for(let i=3;i<=Math.sqrt(so);i+=2)
+{
+if(so%i==0)
+{
+return false;
+}
+}
+return true;
+}
+function InNSoNguyenToDauTien(n){
+let dem=2;
+for(let i=1;i<=n;i++)
+{
+for(let j=dem; ;j++)
+{
+if(KiemTraSoNguyenTo(j))
+{
+document.write(j+" ");
+dem=j+1;
+break;
+}
+}
+}
+}
+n=prompt("nhap n:");
+InNSoNguyenToDauTien(n);
+
+    </script>
+</body>
+</html>

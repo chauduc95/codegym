@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        
+        <script>
+            function ktsnt(so){debugger;
+  if(so<2){
+      return false;
+  }
+  else{
+      for(let i=2;i<=Math.sqrt(so);i++){
+          if(so%i==0){
+              return false;
+          }
+      }
+  }
+  return true;
+}
+
+
+           
+            /*function insnt(n){
+                let j=2;
+                for(let i=1;i<=n;i++){
+                    for(;;j++){
+                    if(ktsnt(j)){
+                        document.write(j+" ");
+                        j=j+1;
+                        break;
+                    }
+
+                }
+
+              }
+            }*/
+         
+     function    insnt(num){debugger
+            let count=0;
+            let N=2;
+        while(count<num){
+            if(ktsnt(N)==true){
+                document.write(N+" ");
+                count++;
+            }
+            N++;
+        }
+     }
+     num=prompt("nhập n");
+     insnt(num);
+
+
+        </script>
+    </body>
+</html>

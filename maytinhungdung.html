@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <form action="" name="calculator"> 
+            <table>
+                <tr>
+                    <td colspan="4"><input type="text" id="" name="manhinh" disabled></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" name="b" onclick="manhinh.value +=1"></td>
+                    <td><input type="button" value="2" name="b" onclick="manhinh.value +=2"></td>
+                    <td><input type="button" value="3" name="b" onclick="manhinh.value +=3"></td>
+                    <td><input type="button" value="+" name="b" onclick="manhinh.value +='+'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" name="b" onclick="manhinh.value +=4"></td>
+                    <td><input type="button" value="5" name="b" onclick="manhinh.value +=5"></td>
+                    <td><input type="button" value="6" name="b" onclick="manhinh.value +=6"></td>
+                    <td><input type="button" value="-" name="b" onclick="manhinh.value +='-'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" name="b" onclick="manhinh.value +=7"></td>
+                    <td><input type="button" value="8" name="b" onclick="manhinh.value +=8"></td>
+                    <td><input type="button" value="9" name="b" onclick="manhinh.value +=9"></td>
+                    <td><input type="button" value="x" name="b" onclick="manhinh.value +='*'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="C" name="vv" onclick="manhinh.value =''"></td>
+                    <td><input type="button" value="0" name="bb" onclick="manhinh.value +=0"></td>
+                    <td><input type="button" value="=" name="nn" onclick="manhinh.value = eval(manhinh.value)"></td>
+                    <td><input type="button" value="/" name="mm" onclick="manhinh.value +='/'"></td>
+                </tr>
+            </table>
+        </form>
+        
+        <script src="java11.js" async defer></script>
+    </body>
+</html>

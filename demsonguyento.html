@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       
+        
+        <script>
+            
+           
+            let flag = true;debugger
+ function ktsnt(){ if (n < 2){
+     flag = false;
+ }
+ else if (n == 2){
+     flag = true;
+ }
+ else if (n % 2 == 0){
+   flag = false;
+ }
+ else{
+     for (var i = 3; i <= Math.sqrt(n); i+=2)
+         if (n % i == 0){
+             flag = false;
+             break;  
+     }
+  }
+  return flag;
+ }
+
+ function lksnt(){
+    let count=0;
+    let N=2;
+    while(count<n){
+        if(ktsnt()==true)
+        {
+            count++;
+
+        }
+    }
+    return count;
+
+ }
+ let n=parseInt(prompt('Nhập số nguyên tố:'));
+ lksnt();
+
+
+
+
+        </script>
+    </body>
+</html>

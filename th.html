@@ -1,0 +1,53 @@
+!<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        
+        <script >
+            function ktsnt(so){debugger
+                if(so<2){
+                    return false;
+                }
+                if(so==2){
+                    return true;
+                }
+                if(so%2==0){
+                    return false;
+                }
+                for(let i=3; i<=Math.sqrt(so);i=i+2){
+                    if(so%i==0){
+                        return false;
+                    }
+                }
+                return true;
+            }
+            function insnt(n){
+                let j=2;
+                for(let i=1;i<=n;i++){
+                    for(;;j++){
+                    if(ktsnt(j)){
+                        document.write(j+" ");
+                        j=j+1;
+                        break;
+                    }
+
+                }
+
+              }
+            }
+            n=prompt("nhập n");debugger
+            insnt(n);
+        </script>
+    </body>
+</html>
